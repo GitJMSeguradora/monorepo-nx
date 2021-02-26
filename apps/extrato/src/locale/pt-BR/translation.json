@@ -1,0 +1,58 @@
+{
+  "extract": {
+    "pageTitle": "Extrato do Corretor",
+    "pageSubtitle": {
+      "firstParagraph": "Com esta ferramenta você poderá gerar informações atualizadas sempre que desejar."
+    },
+    "steps": {
+      "firstStep" : {
+        "title": "Selecione o extrato que deseja gerar",
+        "options": {
+          "payments": "Comissões recebidas",
+          "production": "Total produzido",
+          "accumulation": "Comissões a receber"
+        }
+      },
+      "secondStep": {
+        "title": "Escolha o período e formato para download",
+        "initialDateField": "Data Inicial",
+        "finalDateField": "Data Final",
+        "options": {
+          "pdf": "PDF",
+          "txt": "TXT"
+        }
+      },
+      "switchText": "Desconsiderar cancelados",
+      "submitButton": "Download"
+    },
+    "toast": {
+      "requiredFields": "Preencha todos os campos corretamente",
+      "initialDateValidation": "Data inicial inválida",
+      "finalDateValidation": "Data final inválida",
+      "genericError": "Não foram encontrados dados para os filtros informados.",
+      "success": "Extrato gerado com sucesso."
+    }
+  },
+  "pin": {
+    "pin": "Pin",
+    "pageTitle": "Bem vindo ao extrato do corretor",
+    "pageSubtitle": "Digite seu código de acesso para entrar",
+    "pinRecoveryText": "Esqueceu ou não possui seu código? Clique aqui",
+    "toast": {
+      "invalid": "O PIN digitado é inválido",
+      "recoverProblem": "Houve um problema ao tentar recuperar seu PIN. Por favor, tente novamente em instantes.",
+      "recoveredPinWithEmails": "Um novo PIN foi enviado para: ",
+      "recoveredPin": "Um novo PIN foi enviado para o seu email"
+    }
+  },
+  "errors": {
+    "api": {
+      "400": "Houve um problema com sua requisição. Tente novamente.",
+      "401": "Não foi possível executar esta operação.",
+      "403": "Dados de acesso inválidos.",
+      "404": "Nenhuma informação foi encontrada.",
+      "500": "Houve algum problema com os nossos serviços. Por favor, contate o suporte.",
+      "503": "Estamos com alguma instabilidade nos nossos serviços. Por favor, tente novamente em instantes."
+    }
+  }
+}

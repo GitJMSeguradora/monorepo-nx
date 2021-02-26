@@ -1,0 +1,58 @@
+{
+  "extract": {
+    "pageTitle": "Extract Page",
+    "pageSubtitle": {
+      "firstParagraph": "With this tool you can generate updated information whenever you want."
+    },
+    "steps": {
+      "firstStep" : {
+        "title": "Select the extract you want to generate",
+        "options": {
+          "payments": "Commissions received",
+          "production": "Total of production",
+          "accumulation": "Pending commissions"
+        }
+      },
+      "secondStep": {
+        "title": "Choose the period and format to download",
+        "initialDateField": "Initial Date",
+        "finalDateField": "Final Date",
+        "options": {
+          "pdf": "PDF",
+          "txt": "TXT"
+        }
+      },
+      "switchText": "Disregard Canceled",
+      "submitButton": "Download"
+    },
+    "toast": {
+      "requiredFields": "Fill all the fields correctly",
+      "initialDateValidation": "Invalid initial date",
+      "finalDateValidation": "Invalid final date",
+      "genericError": "We couldn't find data for the filters applied",
+      "success": "Extract successfully generated."
+    }
+  },
+  "pin": {
+    "pin": "Pin",
+    "pageTitle": "Welcome to the broker account statement",
+    "pageSubtitle": "Type your access code in order to enter",
+    "pinRecoveryText": "Forgot or don't have your code? Click here",
+    "toast": {
+      "invalid": "The provided PIN is invalid",
+      "recoverProblem": "There was an error trying to recover your PIN. Please, try again in a few minutes.",
+      "recoveredPinWithEmails": "A new PIN access was sent to: ",
+      "recoveredPin": "A new PIN access was sent to your email"
+    }
+  },
+  "errors": {
+    "api": {
+      "400": "There was a problem with your request. Please, try again.",
+      "401": "This operation could not be done.",
+      "403": "Invalid access data.",
+      "404": "No information was found.",
+      "500": "There was a problem with our services. Please, contact the support.",
+      "503": "We're experiencing some system instability. Please, try again in a few minutes."
+    }
+  }
+}

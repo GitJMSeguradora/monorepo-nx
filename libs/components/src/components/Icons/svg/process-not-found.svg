@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="528" height="112" viewBox="0 0 528 112">
+    <defs>
+        <linearGradient id="prefix__a" x1="0%" x2="98.589%" y1="74.5%" y2="26.191%">
+            <stop offset="0%" stop-color="#AB64F5"/>
+            <stop offset="100%" stop-color="#8D85EE"/>
+        </linearGradient>
+        <linearGradient id="prefix__b" x1="0%" x2="98.589%" y1="51.033%" y2="48.996%">
+            <stop offset="0%" stop-color="#AB64F5"/>
+            <stop offset="100%" stop-color="#8D85EE"/>
+        </linearGradient>
+        <linearGradient id="prefix__c" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(184)">
+            <rect width="160" height="112" fill="url(#prefix__a)" fill-rule="nonzero" opacity=".8" rx="8"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M79.81 80.77c1.166 0 2.113.947 2.113 2.113v.002l-.005.152c-.091 1.128-1.054 1.984-2.184 1.944-1.13-.04-2.03-.963-2.041-2.094v-.003l.005-.152c.08-1.106 1-1.962 2.108-1.963l.004.001zM79.805 41c3.885 0 7.585 1.525 10.417 4.296 2.832 2.77 4.392 6.389 4.392 10.189 0 6.347-4.338 12.052-10.548 13.874-1.15.336-1.921 1.33-1.921 2.472v.728c0 1.263-1.047 2.287-2.338 2.287-1.292 0-2.338-1.024-2.338-2.287v-.728c0-3.178 2.11-5.932 5.253-6.853 4.248-1.246 7.216-5.15 7.216-9.494 0-2.578-1.073-5.048-3.022-6.955-1.95-1.906-4.474-2.955-7.11-2.955-5.586 0-10.13 4.446-10.13 9.91 0 1.263-1.048 2.286-2.339 2.286S65 56.746 65 55.484C65 47.498 71.642 41 79.806 41h-.001z" opacity=".5"/>
+            <path fill="url(#prefix__b)" fill-rule="nonzero" d="M8 0h144c4.418 0 8 3.582 8 8v15H0V8c0-4.418 3.582-8 8-8z" opacity=".8"/>
+            <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M16 11L120 11" opacity=".395"/>
+            <circle cx="130" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+            <circle cx="138" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+            <circle cx="146" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+        </g>
+        <g>
+            <rect width="160" height="112" fill="url(#prefix__a)" fill-rule="nonzero" opacity=".8" rx="8"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M79.81 80.77c1.166 0 2.113.947 2.113 2.113v.002l-.005.152c-.091 1.128-1.054 1.984-2.184 1.944-1.13-.04-2.03-.963-2.041-2.094v-.003l.005-.152c.08-1.106 1-1.962 2.108-1.963l.004.001zM79.805 41c3.885 0 7.585 1.525 10.417 4.296 2.832 2.77 4.392 6.389 4.392 10.189 0 6.347-4.338 12.052-10.548 13.874-1.15.336-1.921 1.33-1.921 2.472v.728c0 1.263-1.047 2.287-2.338 2.287-1.292 0-2.338-1.024-2.338-2.287v-.728c0-3.178 2.11-5.932 5.253-6.853 4.248-1.246 7.216-5.15 7.216-9.494 0-2.578-1.073-5.048-3.022-6.955-1.95-1.906-4.474-2.955-7.11-2.955-5.586 0-10.13 4.446-10.13 9.91 0 1.263-1.048 2.286-2.339 2.286S65 56.746 65 55.484C65 47.498 71.642 41 79.806 41h-.001z" opacity=".5"/>
+            <path fill="url(#prefix__b)" fill-rule="nonzero" d="M8 0h144c4.418 0 8 3.582 8 8v15H0V8c0-4.418 3.582-8 8-8z" opacity=".8"/>
+            <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M16 11L120 11" opacity=".395"/>
+            <circle cx="130" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+            <circle cx="138" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+            <circle cx="146" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+        </g>
+        <path fill="url(#prefix__c)" fill-rule="nonzero" d="M80 0L160 0 160 112 80 112z"/>
+        <path fill="url(#prefix__c)" fill-rule="nonzero" d="M368 0L448 0 448 112 368 112z" transform="matrix(-1 0 0 1 816 0)"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M0 0L80 0 80 112 0 112z"/>
+        <g transform="translate(368)">
+            <rect width="160" height="112" fill="url(#prefix__a)" fill-rule="nonzero" opacity=".8" rx="8"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M79.81 80.77c1.166 0 2.113.947 2.113 2.113v.002l-.005.152c-.091 1.128-1.054 1.984-2.184 1.944-1.13-.04-2.03-.963-2.041-2.094v-.003l.005-.152c.08-1.106 1-1.962 2.108-1.963l.004.001zM79.805 41c3.885 0 7.585 1.525 10.417 4.296 2.832 2.77 4.392 6.389 4.392 10.189 0 6.347-4.338 12.052-10.548 13.874-1.15.336-1.921 1.33-1.921 2.472v.728c0 1.263-1.047 2.287-2.338 2.287-1.292 0-2.338-1.024-2.338-2.287v-.728c0-3.178 2.11-5.932 5.253-6.853 4.248-1.246 7.216-5.15 7.216-9.494 0-2.578-1.073-5.048-3.022-6.955-1.95-1.906-4.474-2.955-7.11-2.955-5.586 0-10.13 4.446-10.13 9.91 0 1.263-1.048 2.286-2.339 2.286S65 56.746 65 55.484C65 47.498 71.642 41 79.806 41h-.001z" opacity=".5"/>
+            <path fill="url(#prefix__b)" fill-rule="nonzero" d="M8 0h144c4.418 0 8 3.582 8 8v15H0V8c0-4.418 3.582-8 8-8z" opacity=".8"/>
+            <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M16 11L120 11" opacity=".395"/>
+            <circle cx="130" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+            <circle cx="138" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+            <circle cx="146" cy="11" r="2" fill="#FFF" fill-rule="nonzero" opacity=".4"/>
+        </g>
+        <path fill="url(#prefix__c)" fill-rule="nonzero" d="M368 0L448 0 448 112 368 112z" transform="rotate(-180 408 56)"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M448 0L528 0 528 112 448 112z"/>
+    </g>
+</svg>

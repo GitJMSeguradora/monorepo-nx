@@ -1,0 +1,264 @@
+{
+  "version": 2,
+  "cli": { "defaultCollection": "@nrwl/react" },
+  "defaultProject": "monorepo-nx",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "@emotion/styled",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": { "style": "@emotion/styled" },
+      "library": { "style": "@emotion/styled", "linter": "eslint" }
+    }
+  },
+  "projects": {
+    "monorepo-nx": {
+      "root": "apps/monorepo-nx",
+      "sourceRoot": "apps/monorepo-nx/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/monorepo-nx",
+            "index": "apps/monorepo-nx/src/index.html",
+            "main": "apps/monorepo-nx/src/main.tsx",
+            "polyfills": "apps/monorepo-nx/src/polyfills.ts",
+            "tsConfig": "apps/monorepo-nx/tsconfig.app.json",
+            "assets": [
+              "apps/monorepo-nx/src/favicon.ico",
+              "apps/monorepo-nx/src/assets"
+            ],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/monorepo-nx/src/environments/environment.ts",
+                  "with": "apps/monorepo-nx/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": { "buildTarget": "monorepo-nx:build" },
+          "configurations": {
+            "production": { "buildTarget": "monorepo-nx:build:production" }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/monorepo-nx/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/monorepo-nx"],
+          "options": {
+            "jestConfig": "apps/monorepo-nx/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "monorepo-nx-e2e": {
+      "root": "apps/monorepo-nx-e2e",
+      "sourceRoot": "apps/monorepo-nx-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/monorepo-nx-e2e/cypress.json",
+            "tsConfig": "apps/monorepo-nx-e2e/tsconfig.e2e.json",
+            "devServerTarget": "monorepo-nx:serve"
+          },
+          "configurations": {
+            "production": { "devServerTarget": "monorepo-nx:serve:production" }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/monorepo-nx-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "extrato": {
+      "root": "apps/extrato",
+      "sourceRoot": "apps/extrato/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/extrato",
+            "index": "apps/extrato/src/index.html",
+            "main": "apps/extrato/src/index.js",
+            "tsConfig": "apps/extrato/tsconfig.app.json",
+            "assets": [
+              "apps/extrato/src/favicon.ico",
+              "apps/extrato/src/assets"
+            ],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/extrato/src/environments/environment.ts",
+                  "with": "apps/extrato/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": { "buildTarget": "extrato:build" },
+          "configurations": {
+            "production": { "buildTarget": "extrato:build:production" }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/extrato/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/extrato"],
+          "options": {
+            "jestConfig": "apps/extrato/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "extrato-e2e": {
+      "root": "apps/extrato-e2e",
+      "sourceRoot": "apps/extrato-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/extrato-e2e/cypress.json",
+            "tsConfig": "apps/extrato-e2e/tsconfig.e2e.json",
+            "devServerTarget": "extrato:serve"
+          },
+          "configurations": {
+            "production": { "devServerTarget": "extrato:serve:production" }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["apps/extrato-e2e/**/*.{js,ts}"] }
+        }
+      }
+    },
+    "components": {
+      "root": "libs/components",
+      "sourceRoot": "libs/components/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/components/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/components"],
+          "options": {
+            "jestConfig": "libs/components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "utils": {
+      "root": "libs/utils",
+      "sourceRoot": "libs/utils/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["libs/utils/**/*.{ts,tsx,js,jsx}"] }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/utils"],
+          "options": {
+            "jestConfig": "libs/utils/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "services": {
+      "root": "libs/services",
+      "sourceRoot": "libs/services/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/services/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/services"],
+          "options": {
+            "jestConfig": "libs/services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  }
+}

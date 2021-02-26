@@ -1,0 +1,27 @@
+{
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "affected": { "defaultBase": "master" },
+  "npmScope": "monorepo-nx",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+    }
+  },
+  "projects": {
+    "monorepo-nx": { "tags": [] },
+    "monorepo-nx-e2e": { "tags": [], "implicitDependencies": ["monorepo-nx"] },
+    "extrato": { "tags": [] },
+    "extrato-e2e": { "tags": [], "implicitDependencies": ["extrato"] },
+    "components": { "tags": [] },
+    "utils": { "tags": [] },
+    "services": { "tags": [] }
+  }
+}

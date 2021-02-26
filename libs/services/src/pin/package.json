@@ -1,0 +1,43 @@
+{
+  "name": "@monorepo-nx/services/pin",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "main:src": "./index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage",
+    "lint": "eslint ./src/**/*.{js,jsx} --format=codeframe"
+  },
+  "dependencies": {
+    "@react-workspaces/react-scripts": "3.0.0-alpha-04"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/setupTests.{js,jsx}",
+      "!src/**/*.(spec|test|stories).{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 90,
+        "branches": 90,
+        "functions": 90,
+        "lines": 90
+      }
+    }
+  }
+}
