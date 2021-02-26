@@ -1,6 +1,7 @@
 import React from 'react';
 import Routes from './routes';
 import { RemoteConfigProvider } from './context/RemoteConfigContext';
+import { GlobalStyle } from '@monorepo-nx/components';
 
 import { Main } from './AppStyles';
 
@@ -9,6 +10,7 @@ const App = () => {
     <RemoteConfigProvider>
       <Main>
         <Routes />
+        <GlobalStyle />
       </Main>
     </RemoteConfigProvider>
   );
