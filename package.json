@@ -5,6 +5,12 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
+    "extrato:start": "cp ./envs/.env.local ./.local.env && nx serve extrato --port 5006",
+    "extrato:start:squad2": "cp ./envs/.env.local.squad2 ./.local.env && nx serve extrato --port 5006",
+    "extrato:start:squad5": "cp ./envs/.env.local.squad5 ./.local.env && nx serve extrato --port 5006",
+    "extrato:start:squad6": "cp ./envs/.env.local.squad6 ./.local.env && nx serve extrato --port 5006",
+    "extrato:start:stg": "cp ./envs/.env.stg ./.local.env && nx serve extrato --port 5006",
+    "extrato:start:prd": "cp ./envs/.env.prd ./.local.env && nx serve extrato --port 5006",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
